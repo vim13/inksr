@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(.*)vim.sakura.ne.jp$
+RewriteRule ^(.*) http://inksr.com$1 [R=301,L]

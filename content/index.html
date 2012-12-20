@@ -1,0 +1,27 @@
+{% extends "_staticpage.html" %}
+
+{%hyde
+    title: ""
+%}
+
+{% block article %}
+##Services##
+
+- [Twitter](https://twitter.com/inksr)
+- [Gist](https://gist.github.com/vim13) / [GitHub](https://github.com/vim13)
+- [last.fm](http://www.last.fm/user/vim13)
+- [Tumblr](http://sasazukaphotos.tumblr.com/)
+- [twitch](http://ja.twitch.tv/sszkdwf)
+- [XBOX/Steam/Origin]: vim13　[WiiU]: sasazuka　[3DS]: 1719-4391-3452
+
+
+
+##Recent Posts##
+
+{%recent_posts recents 5 %}
+
+{%for post in recents %}
+- [{{post.title}}]({{post.url}})
+{%endfor%}
+
+{% endblock %}

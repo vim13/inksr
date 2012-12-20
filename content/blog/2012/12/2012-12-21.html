@@ -1,0 +1,68 @@
+{% extends "_post.html" %}
+
+{%hyde
+    title: Android端末を定点カメラにする
+    created: 2012-12-21 02:52:00
+%}
+
+{% block article %}
+{%article%}
+{% excerpt %}
+
+
+![img1](http://inksr.com/media/blog-images/8291683190_a6f73831f2.jpg_effected.png)
+　　
+
+- [inksr.com : labs : 定点カメラ（静止画）](http://inksr.com/labs/latest_shot.html)
+　　
+
+
+落して画面を割ってしまったHTC Desire HDを定点カメラにしてみます。
+
+##手順
+
+###Androidでの処理
+- [スケジュールカメラ - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=jp.co.nicol.fixedpointcamera&hl=ja)
+
+スケジュールカメラで撮影。　
+
+**Dropboxのカメラアップロード機能をON**にしておいて自動アップロードさせる。　
+
+![img1](http://inksr.com/media/blog-images/8291684882_a5f759dee8_z.jpg_effected.png)
+
+###Macでの処理
+cronでシェルスクリプトを定期的に走らせてFTPアップロード　　
+
+- dropbox.sh
+        
+        #!/bin/sh
+        HOST_NAME="your_host_name"
+        USER_NAME="your_user_name"
+        PASSWORD="your_pass_word"
+        PUT_DIR="www/media/camera/"
+        
+        cd /your/local/dir/pass/ 
+        for file in *.* 
+        do
+            mv "$file" `echo $file | tr ' ' '_'` 
+        done
+        NewestFile=`ls -t1 /your/loca/dir/pass/* | head -1`
+            
+        ftp -n ${HOST_NAME} << _EOF_
+        user ${USER_NAME} ${PASSWORD}
+        bin
+        cd ${PUT_DIR} 
+        pwd
+        
+        put ${NewestFile##*/}
+        rename ${NewestFile##*/} latest_shot.jpg
+        bye
+        _EOF_
+    
+        rm /your/local/dir/pass/*
+
+
+
+{%endexcerpt%}
+{%endarticle%}
+{% endblock %}

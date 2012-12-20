@@ -1,0 +1,24 @@
+{% extends "skeleton/_body.html"%}
+
+{% block content_header %}
+{% endblock %}
+
+{% block search_window %}
+{% endblock %}
+
+{% block content_body %}
+
+<div class="search-box">
+    {% block search_box %}
+    {% endblock %}
+</div>
+
+<div class="page-listing">
+	{% for node in page.node.walk %}
+		{% include "skeleton/_innerlisting.html" %}
+	{% endfor %}
+</div>
+
+<div class="clear"></div>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "_post.html" %}
+
+{%hyde
+    title: Hydeでサイトを作ってみました 
+    created: 2012-12-16 04:37:00
+%}
+
+{% block article %}
+{%article%}
+{% excerpt %}
+- [静的サイト生成という「古くて新しい手法」の復活 - モジログ](http://mojix.org/2012/12/07/static-site-generation)
+
+- [lakshmivyas/hyde](https://github.com/lakshmivyas/hyde)
+
+私は各ウェブサービスをつなぐハブとしてよくTumblrを使ってるんだけど、そういったサービスにたよらないでサイトを作ろうと思うとStatic Site Generatorはかなり使い勝手がいい。データベースを使わないから軽量で管理が楽、シンプルでわかりやすい。
+
+RubyのJekyllが有名なようだけどPythonで書かれたHydeを使う。まだマイナーなのか日本語記事も無い。  
+  
+  
+##メモ  
+
+###Hyde
+
+レンタルサーバーにVirtualenvを入れる。
+
+Hydeのソースをダウンロード
+
+    pip install -r requirements.txt
+
+で最低限のものがインストールされる。
+
+Readme通りにコマンドをうちイニシャライズ、setting.pyを書き換えて生成。
+
+deployディレクトリ以下を公開する。展開先は -d 引数で指定。  
+  
+  　
+###Markdown
+- [Mac App Store - Writedown!](https://itunes.apple.com/jp/app/writedown!/id574184591?mt=12&ign-mpt=uo%3D4)
+
+記事本文はMarkdownで書く
+  
+  　
+###inksr.com/GitHub
+- [vim13/inksr](https://github.com/vim13/inksr)
+
+{%endexcerpt%}
+{%endarticle%}
+{% endblock %}
