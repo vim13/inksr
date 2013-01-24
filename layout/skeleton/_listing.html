@@ -14,7 +14,7 @@
 </div>
 
 <div class="page-listing">
-	{% for node in page.node.walk %}
+	{% for node in page.node.walk reversed %}
 		{% include "skeleton/_innerlisting.html" %}
 	{% endfor %}
 </div>

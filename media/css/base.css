@@ -77,7 +77,8 @@ ul.breadcrumbs {
 
 .breadcrumbs a {
     text-decoration : none;
-    color : #44722a}
+    color : #44722a
+}
 
 .context-nav a { color : #44722a }
 
@@ -120,5 +121,5 @@ ul.breadcrumbs {
 .post-date {
     float : right;
     font-style : italic;
-    font-size :   .8em
+    font-size : .8em
 }
