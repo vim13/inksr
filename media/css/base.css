@@ -1,8 +1,8 @@
 body {
     padding : 0;
     margin : 0;
-    color : #606060;
-    background-color : #F9F9F9
+    color : #686868;
+    background-color : #181818
 }
 
 ul { margin:0 }
@@ -14,7 +14,7 @@ ul { margin:0 }
     font-size : .7em
 }
 
-a { color:#606060 }
+a { color:#686868 }
 
 pre {
     background-color : #e0e0e0;
@@ -24,9 +24,9 @@ pre {
     color : #000
 }
 
-h2 { color:#bda619 }
+h2 { color:#e5cd3e }
 
-h3 { color : #bda619 }
+h3 { color : #e5cd3e }
 
 #site {
     margin : 0 auto;
