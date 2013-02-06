@@ -1,0 +1,40 @@
+{% extends "_post.html" %}
+
+{%hyde
+    title: DQ10冒険者の広場フリーコメントXSS Tips
+    created: 2013-02-04 18:13:00
+%}
+
+{% block article %}
+{%article%}
+{% excerpt %}
+![img1](/media/blog-images/hirobamypage.jpg)
+
+- [ササヅカ - ドラゴンクエストX　目覚めし五つの種族　オンライン ](http://hiroba.dqx.jp/sc/character/914187492213/)
+
+##強制改行の処理
+半角44*3のフリーコメント欄の各行末尾に改行タグが入る。
+
+###HTMLタグ内
+適当な属性の中に入れる
+
+    <img src='hoge.gif' z='<br />'>
+
+###CSS内
+セミコロンでプロパティ化
+
+    body{<br />
+    ;background:url(http://hoge.gif);<br />
+    }
+
+###javascript内
+適当な変数の中に入れる
+<blockquote class="twitter-tweet"><p>&lt;script&gt;var s=Math.random();var a='■'+'&lt;img src=<a href="http://t.co/vpy7PDUr" title="http://p.tl/AhmS?'+s">p.tl/AhmS?'+s</a>+'&gt;';s='■';document.write(a);&lt;/script&gt;タイムスタンプ版カウンタ。■で改行</p>&mdash; フルシアンテ (@hole_dqx) <a href="https://twitter.com/hole_dqx/status/298368362839408640">February 4, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    var hoge='<br />'
+
+
+{%endexcerpt%}
+{%endarticle%}
+{% endblock %}

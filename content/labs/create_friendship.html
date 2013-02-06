@@ -1,0 +1,39 @@
+{% extends "_staticpage.html" %}
+
+{%hyde
+    title: "フォローさせる/ふぁぼらせる"
+%}
+
+{% block article %}
+
+##フォローさせる
+sszkにあなたのおすすめユーザーをフォローさせよう
+
+<form name="create_friendship" method="POST" action="/media/python/friendship.cgi">
+    　@<input type="text" maxlength="15" size="15" name="user">
+    <input type="submit" value="フォローしとけ" name="button1">
+</form>
+<br />
+
+[sszkのfollowing](https://twitter.com/inksr/following)
+
+<br />
+
+##ふぁぼらせる
+sszkに面白いtweetをふぁぼらせよう　sszkが後で読むよ
+
+<form name="favorite" method="POST" action="/media/python/favorite.cgi">
+    　　<input type="text" maxlength="20" size="20" name="status_id">
+    <input type="submit" value="ふぁぼっとけ" name="button22">
+</form>
+(https://twitter.com/hoge/status/**XXXXXXXXXXXXXXXXXX**)
+<br />
+
+[sszkのfavorites](https://twitter.com/inksr/favorites)
+
+
+<br />
+
+- [かわりにフォローしといてくれ](http://inksr.com/blog/2013/02/2013-02-06.html)
+
+{% endblock %}
