@@ -1,0 +1,21 @@
+{% extends "_staticpage.html" %}
+
+
+{%hyde
+    title: "ライフゲーム"
+%}
+
+{% block article %}
+<script src="../media/js/life.js"></script>
+
+<a href="./gameoflife.html"><canvas id="ocean" style="display:block;margin:auto;"></canvas></a>
+
+[gist](https://gist.github.com/vim13/2870915deabc3032ae59)
+
+
+<br />
+##参考
+
+- [50行で作る、HTML5+JavaScriptな簡単ライフゲーム【プログラミング】 - あのねノート。](http://ottati.hatenablog.com/entry/2013/09/14/105014)
+
+{% endblock %}
