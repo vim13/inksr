@@ -1,55 +1,46 @@
 body {
     padding : 0;
     margin : 0;
-    color : #000000;
-    background-color : #FFFFFF;
-    background-image : url("http://farm8.staticflickr.com/7297/9448978733_4bafe0a50b_h.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    color : #686868;
+    background-color : #181818
 }
 
 ul { margin:0 }
 
 #footer {
     text-align : center;
-    border-top : 1px solid #111111;
+    border-top : 1px solid #44722a;
     margin : 2em auto 0;
     font-size : .7em
 }
 
-a { color:#000000 }
+a { color:#686868 }
 
 pre {
-    background-color : #e5e5e5;
+    background-color : #e0e0e0;
     border : 1px solid #CCC;
     border-radius : 3px 3px 3px 3px;
     padding : 6px 10px;
     color : #000
 }
 
-h2 { color:#dab323 }
-h3 { color:#dab323 }
+h2 { color:#e5cd3e }
+
+h3 { color : #e5cd3e }
 
 #site {
-    margin : 1em auto;
-    padding : 2em 3em;
-    width : 50em;
-    min-height : 50em;
-    position : relative;
-    background-color : #FFFFFF;
-    box-shadow : 10px 10px 20px #111111; 
-}
-
-em {
-    font-weight : bold;
+    margin : 0 auto;
+    width : 53em;
+    min-height : 53em;
+    position : relative
 }
 
 blockquote {
-    color : #000;
-    border-left : .5em solid #CCC;
+    color : #686868;
+    background-color : #202020;
+    border-left : .5em solid #686868;
     padding : 0 2em;
-    margin-left : 2em;
+    margin-left : 0;
     max-width : 476px
 }
 
@@ -87,18 +78,18 @@ ul.breadcrumbs {
 
 .breadcrumbs a {
     text-decoration : none;
-    color : #111111
+    color : #44722a
 }
 
-.context-nav a { color : #111111 }
+.context-nav a { color : #44722a }
 
 .breadcrumbs a:hover { text-decoration : underline }
 
-.breadcrumbs .separator { color : #111111 }
+.breadcrumbs .separator { color : #44722a }
 
 #sitenav {
     text-align : center;
-    border-bottom : .2em solid #111111;
+    border-bottom : .2em solid #44722a;
     padding-bottom : .2em
 }
 
@@ -112,19 +103,19 @@ ul.breadcrumbs {
 #sitenav a {
     text-decoration : none;
     padding : .2em;
-    color : #e8e8e8;
-    background-color : #111111
+    color : #e8f4e1;
+    background-color : #44722a
 }
 
 #sitenav .selected a {
-    color : #111111;
-    background-color : #e8e8e8
+    color : #44722a;
+    background-color : #e8f4e1
 }
 
 #content-header { padding-bottom : .5em }
 
 #content-header h1 {
-    border-bottom : 1px dotted #111111;
+    border-bottom : 1px dotted #44722a;
     margin-bottom : .5em
 }
 

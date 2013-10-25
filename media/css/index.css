@@ -2,11 +2,7 @@ body {
     padding : 0;
     margin : 0;
     color : #000000;
-    background-color : #FFFFFF;
-    background-image : url("http://farm8.staticflickr.com/7297/9448978733_4bafe0a50b_h.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color : #FFFFFF
 }
 
 ul { margin:0 }
@@ -21,7 +17,7 @@ ul { margin:0 }
 a { color:#000000 }
 
 pre {
-    background-color : #e5e5e5;
+    background-color : #e0e0e0;
     border : 1px solid #CCC;
     border-radius : 3px 3px 3px 3px;
     padding : 6px 10px;
@@ -32,24 +28,19 @@ h2 { color:#dab323 }
 h3 { color:#dab323 }
 
 #site {
-    margin : 1em auto;
-    padding : 2em 3em;
-    width : 50em;
-    min-height : 50em;
+    margin : 0 auto;
+    width : 53em;
+    min-height : 53em;
     position : relative;
-    background-color : #FFFFFF;
-    box-shadow : 10px 10px 20px #111111; 
-}
-
-em {
-    font-weight : bold;
+    background-color : #000000
 }
 
 blockquote {
     color : #000;
+    background-color : #e0e0e0;
     border-left : .5em solid #CCC;
     padding : 0 2em;
-    margin-left : 2em;
+    margin-left : 0;
     max-width : 476px
 }
 
@@ -112,13 +103,13 @@ ul.breadcrumbs {
 #sitenav a {
     text-decoration : none;
     padding : .2em;
-    color : #e8e8e8;
+    color : #e8f4e1;
     background-color : #111111
 }
 
 #sitenav .selected a {
     color : #111111;
-    background-color : #e8e8e8
+    background-color : #e8f4e1
 }
 
 #content-header { padding-bottom : .5em }
