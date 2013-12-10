@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(.*)vim.sakura.ne.jp$
-RewriteRule ^(.*) http://inksr.com$1 [R=301,L]
-RewriteCond %{HTTP_HOST} ^(.*)www.inksr.com$
-RewriteRule ^(.*) http://inksr.com$1 [R=301,L]
+RewriteRule ^(.*) http://sszk.sk$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^(.*)www.sszk.sk$
+RewriteRule ^(.*) http://sszk.sk$1 [R=301,L]

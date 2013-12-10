@@ -5,7 +5,7 @@
 {% block article %}
 ##Services##
 
-- [Twitter](https://twitter.com/inksr)
+- [Twitter](https://twitter.com/sszka)
 - [Gist](https://gist.github.com/vim13) / [GitHub](https://github.com/vim13)
 - [last.fm](http://www.last.fm/user/vim13)
 - [Tumblr](http://vim13.tumblr.com/)
@@ -20,8 +20,10 @@
 
 {%recent_posts recents 5 %}
 
+
 {%for post in recents %}
 - [{{post.title}}]({{post.url}})
 {%endfor%}
+
 
 {% endblock %}

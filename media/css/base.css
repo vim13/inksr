@@ -20,6 +20,12 @@ ul { margin:0 }
 
 a { color:#000000 }
 
+#post-content p {
+    text-indent : 1em;
+    line-height : 150%;
+    margin : 2em 0em;
+    }
+
 pre {
     background-color : #e5e5e5;
     border : 1px solid #CCC;
@@ -50,7 +56,6 @@ blockquote {
     border-left : .5em solid #CCC;
     padding : 0 2em;
     margin-left : 2em;
-    max-width : 476px
 }
 
 #header {

@@ -12,9 +12,9 @@ BACKUPS_DIR = here('backups')
 BACKUP = False
 
 SITE_ROOT = "/"
-SITE_WWW_URL = "http://inksr.com"
-SITE_NAME = "inksr.com"
-SITE_AUTHOR = "@inksr"
+SITE_WWW_URL = "http://sszk.sk"
+SITE_NAME = "sszk"
+SITE_AUTHOR = "@sszka"
 
 #URL Configuration
 GENERATE_ABSOLUTE_FS_URLS = False
