@@ -13,7 +13,7 @@ BACKUP = False
 
 SITE_ROOT = "/"
 SITE_WWW_URL = "http://sszk.sk"
-SITE_NAME = "sszk"
+SITE_NAME = "sszk.sk"
 SITE_AUTHOR = "@sszka"
 
 #URL Configuration

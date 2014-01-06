@@ -27,12 +27,19 @@ a { color:#000000 }
     }
 
 pre {
+    margin-left : -1em;
     background-color : #e5e5e5;
     border : 1px solid #CCC;
     border-radius : 3px 3px 3px 3px;
     padding : 6px 10px;
     color : #000
 }
+
+p img {
+    margin-left : -1em;
+    max-width : 800px;
+    min-width : 1px;
+    }
 
 h2 { color:#dab323 }
 h3 { color:#dab323 }

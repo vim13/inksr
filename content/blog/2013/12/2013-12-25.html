@@ -1,0 +1,64 @@
+{% extends "_post.html" %}
+
+{%hyde
+    title: css text-indentとimgタグ/日記
+    created: 2013-12-25 22:54:00
+%}
+
+{% block article %}
+{%article%}
+{% excerpt %}
+
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+##text-indentとimgタグ
+
+pタグ内の画像をcssで記事の表示エリアを超えないサイズにmax-widthで調整する。すると画像が最大サイズの時に左にインデントによる一文字分の空間ができてバランスが悪くなる。
+
+text-indentで一文字下げてるので、
+
+    #post-content p {
+        text-indent : 1em;
+        line-height : 150%;
+        margin : 2em 0em;
+    }
+
+    p img {
+        text-indent : 0em;
+        max-width : 800px;
+        min-width : 1px;
+    }
+
+こうしてみると変化がない。上のtext-indentを下で上書きできてることを確認し、-1emや-16pxとしてもだめ。
+
+    p img {
+        margin-left : -1em;
+        max-width : 800px;
+        min-width : 1px;
+    }
+
+margin-leftで左にずらすとインデントによる空白を消せた。なんでtext-indentだとだめなんだろう。
+
+
+##日記
+
+![サン・ピエトロ](http://gyazo.com/bd33b5e5caa771bee22a3e429f67a6a1.png)
+
+ニコ生の[サン・ピエトロ大聖堂のミサ生中継](http://live.nicovideo.jp/watch/lv160712868)楽しみにしてたのに会場の音全く入ってなくてがっかりだった。
+
+ニコニコのプレミアム会員なんだけど、説明を読むとプレミアム会員はタイムシフトを事前予約しなくても視聴できるっぽい。じゃぁなんでタイムシフト予約ボタンがあるんだ。プレミアムには意味ないのか。
+
+
+###クリスマス・ケーキなど
+
+伊勢丹いったら宝石売り場にひとがすごいいっぱいいた。なかなかだった。
+
+![cake](/media/blog-images/2013-12-25-cake.png)
+
+地下でおがくずみたいなおしゃれなケーキ買った。25日でもまだクリスマスケーキ売ってるんですね。25日なんでそんなに並ばずに買えました。これめっちゃおいしかったです。
+
+{%endexcerpt%}
+{%endarticle%}
+{% endblock %}
